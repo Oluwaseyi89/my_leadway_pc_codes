@@ -1,0 +1,92 @@
+* {
+    margin: auto;
+}
+
+body {
+    background-color: gray;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calc-container {
+    height: 480px;
+    width: 350px;
+    /* border: solid blue 1px; */
+    background-color: black;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: white 1px 1px 2px 1px;
+
+}
+
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inner {
+    border: solid violet 3px;
+    border-radius: 10px;
+    height: 460px;
+    width: 330px;
+}
+
+.upper {
+    border-bottom: solid violet 2px;
+    height: 90px;
+}
+
+.screen {
+    border-top: solid violet 2px;
+    opacity: 98%;
+    height: 60px;
+    margin-top: 25px;
+    color: white;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.lower {
+    /* border: solid violet 1px; */
+    height: 330px;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.gen-btn {
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    font-family: 'MV Boli';
+    font-size: 1.3em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gen-btn:hover {
+    background-color: chartreuse;
+    height: 53px;
+    width: 53px;
+}
+
+#add-btn {
+    height: 120px;
+    grid-area: span 2;
+    
+}
+
+#backspace {
+    background-image: url('./images/backspace-21.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
